@@ -24,11 +24,33 @@ alter table student drop column stdHP;
 alter table student drop stdAge,
 					drop stdAddress1; 
 describe student;
-*/
+
 
 -- 외래키 제약조건을 먼저 삭제해야 주키를 삭제할 수 있음
--- alter table student drop constraint FK_std_depart;
--- alter table professor drop constraint FK_pro_department;
--- alter table professor drop foreign key;
+alter table student drop constraint FK_std_depart;
+alter table professor drop constraint FK_pro_department;
+alter table professor drop foreign key;
 alter table department drop primary key;
-describe department;
+
+-- 주키 제약 조건 추가 : department
+alter table department add constraint PK_depart_depCode primary key (depCode);
+-- (또는) alter table department add primary key (depCode); 
+
+-- 외래키 제약 조건 추가 : student professor
+alter table student add constraint FK_student_department foreign key (depCode) references department (depCode);
+alter table professor add constraint FK_professor_department foreign key (depCode) references department (depCode);
+
+-- 기본키로 정보 삭제시 이를 참조하는 외래키 데이터도 자동 삭제하는 설정
+-- on delete cascade
+alter table student 
+	drop constraint FK_student_department;
+
+alter table student
+	add constraint FK_student_department 
+    foreign key (depCode) references department (depCode)
+    on delete cascade
+    on update cascade;
+
+-- alter table department drop column depCode ;   
+describe student;
+*/
