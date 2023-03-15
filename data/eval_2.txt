@@ -1,6 +1,0 @@
-eval_id	student	rank_val
-1	A005	D
-2	A001	D
-3	A002	A
-4	A006	B
-5	A003	C

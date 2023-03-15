@@ -1,5 +1,0 @@
-rank_val	rank_name
-A	우수
-B	양호
-C	보통
-D	개선

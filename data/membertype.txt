@@ -1,3 +1,0 @@
-membertype_id	membertype
-1	보통 회원
-2	할인 회원

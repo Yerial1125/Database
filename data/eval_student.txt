@@ -1,6 +1,0 @@
-student	student_name
-A001	이민호
-A002	김수지
-A003	박미래
-A004	김미미
-A005	이예지

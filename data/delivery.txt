@@ -1,6 +1,0 @@
-delivery_id	customer	quantity	delivery_time
-1	A社	5	1
-2	B社	3	3
-3	C社	2	2
-4	D社	8	NULL
-5	E社	12	1

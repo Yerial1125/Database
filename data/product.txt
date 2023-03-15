@@ -1,5 +1,0 @@
-product_id	product_name	stock	price
-1	약용 입욕제	100	70
-2	약용 핸드솝	23	700
-3	천연 아로마 입욕제	4	120
-4	거품 목욕제	23	120 
