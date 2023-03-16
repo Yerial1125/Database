@@ -4,7 +4,7 @@ create table product (
  	prdNo varchar(10) not null primary key,
     prdName varchar(30) not null,
     prdPrice int,
-     prdCompany varchar(30)
+	prdCompany varchar(30)
 );
 
 create table product1 (
